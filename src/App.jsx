@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {createHashRouter, RouterProvider } from "react-router-dom";
 import About from "./Component/About/About";
 import Contact from "./Component/Contact/Contact";
 import Portfolio from "./Component/Portfolio/Portfolio";
@@ -6,7 +6,7 @@ import Layout from "./Component/layout/Layout";
 import Notfound from "./Component/Notfound/Notfound";
 import Start from "./Component/Start/Start";
 
-let x = createBrowserRouter(
+let x = createHashRouter(
   [
     {
       path: "/",
@@ -20,9 +20,6 @@ let x = createBrowserRouter(
       ],
     },
   ],
-  {
-    basename: "/ReactProject", 
-  }
 );
 
 function App() {
